@@ -27,8 +27,8 @@
 
 ## 💻 How to Run Locally:
 ```bash
-git clone https://github.com/garavainabhanuprasad21/weather-app.git
-cd weather-app
+git clone https://github.com/garavainabhanuprasad21/MegaMart-Ecommerce.git
+cd megamart-ecommerce
 ```
 Open index.html in your browser
 
