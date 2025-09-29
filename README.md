@@ -21,7 +21,7 @@
 ---
 
 ## 🎯 Live Demo:
-[View Live Demo](https://garavainabhanuprasad21.github.io/weather-app/)  
+[View Live Demo](https://garavainabhanuprasad21.github.io/MegaMart-Ecommerce/)  
 
 ---
 
