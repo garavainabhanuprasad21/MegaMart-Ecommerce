@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - MegaMart</title>
+  <link rel="stylesheet" href="index.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/lucide/dist/umd/lucide.js"></script>
+  <style>
+    /* About Page Specific Styles */
+    .home {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+      margin: 2rem 1rem 2rem 1rem;
+      border-radius: 20px;
+    }
+    .home .content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    .home .content p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+    .home .btn {
+      background: white;
+      color: #667eea;
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+    .home .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .featured {
+      padding: 3rem 1rem;
+      background: white;
+      margin-bottom: 2rem;
+    }
+
+    #leadership {
+      padding: 2rem 1rem;
+      border-radius: 20px;
+      margin-bottom: 4rem;
+      margin-top: 4rem;
+    }
+
+    #story {
+      padding: 2rem 1rem;
+      border-radius: 20px;
+      margin-bottom: 4rem;
+      margin-top: 4rem;
+    }
+
+    .featured h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: var(--primary-color);
+    }
+    .featured p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .categories {
+      padding: 4rem 2rem;
+      background: white;
+      border-radius: 15px;
+    }
+    .categories h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      padding-top: 2rem;
+      color: var(--primary-color);
+    }
+    .categories .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding-bottom: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .categories .product {
+      background: rgb(248, 248, 248);
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .categories .product:hover {
+      transform: translateY(-5px);
+    }
+    .categories .product h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .categories .product p {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .offers {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 3rem 1rem;
+      background: var(--primary-color);
+      color: white;
+      flex-wrap: wrap;
+    }
+    .offer {
+      text-align: center;
+      flex: 1 1 200px;
+      max-width: 250px;
+    }
+    .offer h3 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    .offer p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .featured .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .featured .product {
+      background: rgb(248, 248, 248);
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .featured .product:hover {
+      transform: translateY(-5px);
+    }
+    .featured .product img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 4px solid var(--primary-color);
+    }
+    .featured .product h3 {
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+    }
+    .featured .product p {
+      color: #555;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .featured .product p:last-child {
+      font-size: 0.9rem;
+      color: #777;
+      font-weight: 400;
+    }
+
+    .categories ul {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding-left: 2rem;
+    }
+    .categories li {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    .featured:last-of-type {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+      border-radius: 20px;
+      margin: 2rem 1rem 2rem 1rem;
+      max-width: 1200px;
+      max-height: 600px;
+    }
+    .featured:last-of-type h2 {
+      color: white;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .featured:last-of-type p {
+      color: rgba(255,255,255,0.9);
+      font-size: 1.3rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .featured:last-of-type .btn {
+      background: white;
+      color: #667eea;
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: transform 0.3s ease;
+      margin-top: 1rem;
+    }
+    .featured:last-of-type .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .home .content h1 {
+        font-size: 2.5rem;
+      }
+      .home .content p {
+        font-size: 1.1rem;
+      }
+      .offers {
+        flex-direction: column;
+        align-items: center;
+      }
+      .categories .product-grid,
+      .featured .product-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <a href="index.html" class="logo" id="logo">MegaMart</a>
+
+      <nav class="main-nav">
+        <a href="index.html" id="home">Home</a>
+        <a href="products.html" id="products">Products</a>
+        <a href="deals.html" id="deals">Deals</a>
+        <a href="about.html" id="about">About</a>
+        <a href="contact.html" id="contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="hamburger-btn" aria-label="Menu">
+          <i data-lucide="menu"></i>
+        </button>
+
+        <button class="wishlist-btn" aria-label="Wishlist">
+          <i data-lucide="heart"></i>
+          <span class="wishlist-count">0</span>
+        </button>
+
+        <button class="cart-btn" aria-label="Shopping Cart">
+          <i data-lucide="shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" aria-label="Close Menu">
+      <i data-lucide="x"></i>
+    </button>
+    <nav class="mobile-nav">
+      <a href="index.html" id="mobile-home">Home</a>
+      <a href="products.html" id="mobile-products">Products</a>
+      <a href="deals.html" id="mobile-deals">Deals</a>
+      <a href="about.html" id="mobile-about">About</a>
+      <a href="contact.html" id="mobile-contact">Contact</a>
+      <a href="login.html" class="mobile-auth-btn">Login/Signup</a>
+    </nav>
+  </div>
+  
+  <main>
+    <section class="home">
+      <div class="content">
+        <h1>About MegaMart</h1>
+        <p>Your Trusted Partner in Online Shopping Excellence</p>
+        <a href="#story" class="btn">Learn Our Story</a>
+      </div>
+    </section>
+
+    <section id="story" class="featured">
+      <h2>Our Story</h2>
+      <p>
+        MegaMart was founded in 2010 with a simple vision: to make quality products accessible to everyone, everywhere. Starting as a small online store in a garage, we've grown into one of the world's leading e-commerce platforms, serving millions of customers across 50+ countries.
+      </p>
+      <p>
+        Our journey has been driven by innovation, customer trust, and a relentless commitment to excellence. We've invested billions in technology, logistics, and sustainability to create a shopping experience that's not just convenient, but truly transformative.
+      </p>
+      <div class="product-grid">
+        <div class="product">
+          <h3>2010</h3>
+          <p>Founded with 100 products in a single category</p>
+        </div>
+        <div class="product">
+          <h3>2015</h3>
+          <p>Expanded to 10,000+ products across multiple categories</p>
+        </div>
+        <div class="product">
+          <h3>2020</h3>
+          <p>Reached 1 million customers globally</p>
+        </div>
+        <div class="product">
+          <h3>2025</h3>
+          <p>Serving 50+ countries with 1M+ products</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <h2>What We Stand For</h2>
+      <div class="product-grid">
+        <div class="product">
+          <h3>Quality Assurance</h3>
+          <p>Every product undergoes rigorous testing and quality checks before reaching our customers.</p>
+        </div>
+        <div class="product">
+          <h3>Fast & Free Shipping</h3>
+          <p>Free shipping on orders over $50, with delivery within 2-5 business days.</p>
+        </div>
+        <div class="product">
+          <h3>24/7 Customer Support</h3>
+          <p>Our dedicated support team is available around the clock to assist you.</p>
+        </div>
+        <div class="product">
+          <h3>Secure Payments</h3>
+          <p>Bank-grade security with multiple payment options including credit cards, PayPal, and more.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers">
+      <div class="offer">
+        <h3>10M+</h3>
+        <p>Happy Customers Worldwide</p>
+      </div>
+      <div class="offer">
+        <h3>1M+</h3>
+        <p>Products in Our Catalog</p>
+      </div>
+      <div class="offer">
+        <h3>4.8/5</h3>
+        <p>Average Customer Rating</p>
+      </div>
+    </section>
+
+    <section id="leadership" class="featured">
+      <h2>Meet Our Leadership Team</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=387&auto=format&fit=crop" alt="Alex Johnson - CEO" />
+          <h3>Alex Johnson</h3>
+          <p>Chief Executive Officer</p>
+          <p>Leading MegaMart's vision with 15+ years in e-commerce and retail innovation.</p>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=387&auto=format&fit=crop" alt="Maria Garcia - COO" />
+          <h3>Maria Garcia</h3>
+          <p>Chief Operating Officer</p>
+          <p>Overseeing global operations and logistics, ensuring seamless delivery worldwide.</p>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1170&auto=format&fit=crop" alt="James Chen - CTO" />
+          <h3>James Chen</h3>
+          <p>Chief Technology Officer</p>
+          <p>Driving technological innovation with expertise in AI, cloud computing, and cybersecurity.</p>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=387&auto=format&fit=crop" alt="Sarah Williams - CMO" />
+          <h3>Sarah Williams</h3>
+          <p>Chief Marketing Officer</p>
+          <p>Crafting compelling brand stories and digital marketing strategies that engage millions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="home">
+      <div class="content">
+        <h1>Join Our Community</h1>
+        <p>
+          Become part of the MegaMart family today. Whether you're shopping for the latest gadgets, fashion essentials, or home decor, we're here to provide an exceptional online shopping experience.
+        </p>
+        <p>
+          Follow us on social media for exclusive deals, product launches, and behind-the-scenes insights into our commitment to innovation and customer satisfaction.
+        </p>
+        <a href="contact.html" class="btn">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Wishlist Modal -->
+  <div class="modal" id="wishlistModal" aria-hidden="true" role="dialog" aria-labelledby="wishlistTitle">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close Wishlist">×</button>
+      <h3 id="wishlistTitle">Your Wishlist</h3>
+      <div id="wishlistItems"></div>
+    </div>
+  </div>
+
+  <!-- Cart Modal -->
+  <div class="modal" id="cartModal" aria-hidden="true" role="dialog" aria-labelledby="cartTitle">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close Cart">×</button>
+      <h3 id="cartTitle">Your Shopping Cart</h3>
+      <div id="cartItems"></div>
+    </div>
+  </div>
+
+  <!-- Order Success Modal -->
+  <div class="modal" id="orderSuccessModal" aria-hidden="true" role="dialog" aria-labelledby="orderSuccessTitle">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="orderSuccessTitle">Order Placed Successfully!</h3>
+      <p>Your order has been placed. Thank you for shopping with us!</p>
+      <button class="place-order-btn" id="continueShoppingBtn">Continue Shopping</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 MegaMart. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

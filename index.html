@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MegaMart - Everything You Need. One Mega Destination.</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/lucide/dist/umd/lucide.js"></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="index.html" class="logo" id="logo">MegaMart</a>
+
+        <nav class="main-nav">
+          <a href="index.html" id="home">Home</a>
+          <a href="products.html" id="products">Products</a>
+          <a href="deals.html" id="deals">Deals</a>
+          <a href="about.html" id="about">About</a>
+          <a href="contact.html" id="contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="hamburger-btn" aria-label="Menu">
+            <i data-lucide="menu"></i>
+          </button>
+
+          <button class="wishlist-btn" aria-label="Wishlist">
+            <i data-lucide="heart"></i>
+            <span class="wishlist-count">0</span>
+          </button>
+
+          <button class="cart-btn" aria-label="Shopping Cart">
+            <i data-lucide="shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-menu-close" aria-label="Close Menu">
+        <i data-lucide="x"></i>
+      </button>
+      <nav class="mobile-nav">
+        <a href="index.html" id="mobile-home">Home</a>
+        <a href="products.html" id="mobile-products">Products</a>
+        <a href="deals.html" id="mobile-deals">Deals</a>
+        <a href="about.html" id="mobile-about">About</a>
+        <a href="contact.html" id="mobile-contact">Contact</a>
+        <a href="login.html" class="mobile-auth-btn">Login/Signup</a>
+      </nav>
+    </div>
+
+    <main>
+      <!-- Hero Slider -->
+      <section class="home">
+        <div class="swiper home-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="content">
+                <span>Exclusive Offer</span>
+                <h3>Latest Mobile Phones</h3>
+                <p>Shop the newest smartphones at unbeatable prices.</p>
+                <a href="#" class="btn">Shop Now</a>
+              </div>
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1640936343842-268f9d87e764?q=80&w=847&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Mobile Phones"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <span>Trending</span>
+                <h3>Fashion Collection</h3>
+                <p>Upgrade your wardrobe with the latest styles.</p>
+                <a href="#" class="btn">Shop Now</a>
+              </div>
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1589988576838-0676b2ff398e?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Fashion"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <span>New Arrivals</span>
+                <h3>Home Essentials</h3>
+                <p>Everything you need to make your home cozy and stylish.</p>
+                <a href="#" class="btn">Shop Now</a>
+              </div>
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1716846135834-ae0490d08c83?q=80&w=822&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Home Essentials"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <span>Must Have</span>
+                <h3>Accessories</h3>
+                <p>Stylish accessories to complete your look.</p>
+                <a href="#" class="btn">Shop Now</a>
+              </div>
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1626589618584-677eacfcd265?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Accessories"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <span>Step Up</span>
+                <h3>Footwear</h3>
+                <p>Comfortable and stylish shoes for every occasion.</p>
+                <a href="#" class="btn">Shop Now</a>
+              </div>
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1561808843-7adeb9606939?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Footwear"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- Categories Slider -->
+      <section class="categories">
+        <h2>Shop By Categories</h2>
+        <div class="swiper category-slider">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+              aria-label="Mobiles Category"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=200&q=80"
+                alt="Mobiles"
+                loading="lazy"
+              />
+              <p>Mobiles</p>
+            </div>
+            <div
+              class="swiper-slide"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+              aria-label="Fashion Category"
+            >
+              <img
+                src="https://plus.unsplash.com/premium_photo-1755534537397-c72659a0a70c?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Fashion"
+                loading="lazy"
+              />
+              <p>Fashion</p>
+            </div>
+            <div
+              class="swiper-slide"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+              aria-label="Accessories Category"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1689479572885-2eff38be7c47?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Accessories"
+                loading="lazy"
+              />
+              <p>Accessories</p>
+            </div>
+            <div
+              class="swiper-slide"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+              aria-label="Home Items Category"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=200&q=80"
+                alt="Home Items"
+                loading="lazy"
+              />
+              <p>Home Items</p>
+            </div>
+            <div
+              class="swiper-slide"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+              aria-label="Footwear Category"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1721819269041-e14fc6c95eb8?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Footwear"
+                loading="lazy"
+              />
+              <p>Footwear</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="featured">
+        <h2>Featured Products</h2>
+        <div class="product-grid" id="productGrid">
+          <!-- Products will be added dynamically -->
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div
+        class="modal"
+        id="productModal"
+        aria-hidden="true"
+        role="dialog"
+        aria-labelledby="modalTitle"
+        aria-describedby="modalDesc"
+      >
+        <div class="modal-content" role="document">
+          <button class="modal-close" aria-label="Close Modal">&times;</button>
+          <img src="" alt="" class="modal-img" />
+          <h3 id="modalTitle"></h3>
+          <div class="modal-rating" aria-label="Rating"></div>
+          <p id="modalDesc"></p>
+          <div class="modal-price"></div>
+          <div class="modal-cart-container"></div>
+          <hr />
+          <section class="reviews-section" id="modalReviews"></section>
+        </div>
+      </div>
+
+      <!-- Wishlist Modal -->
+      <div
+        class="modal"
+        id="wishlistModal"
+        aria-hidden="true"
+        role="dialog"
+        aria-labelledby="wishlistTitle"
+      >
+        <div class="modal-content">
+          <button class="modal-close" aria-label="Close Wishlist">&times;</button>
+          <h3 id="wishlistTitle">Your Wishlist</h3>
+          <div id="wishlistItems"></div>
+        </div>
+      </div>
+
+      <!-- Cart Modal -->
+      <div
+        class="modal"
+        id="cartModal"
+        aria-hidden="true"
+        role="dialog"
+        aria-labelledby="cartTitle"
+      >
+        <div class="modal-content">
+          <button class="modal-close" aria-label="Close Cart">&times;</button>
+          <h3 id="cartTitle">Your Shopping Cart</h3>
+          <div id="cartItems"></div>
+        </div>
+      </div>
+
+      <!-- Order Success Modal -->
+      <div
+        class="modal"
+        id="orderSuccessModal"
+        aria-hidden="true"
+        role="dialog"
+        aria-labelledby="orderSuccessTitle"
+      >
+        <div class="modal-content">
+          <button class="modal-close" aria-label="Close">&times;</button>
+          <h3 id="orderSuccessTitle">Order Placed Successfully!</h3>
+          <p>Your order has been placed. Thank you for shopping with us!</p>
+          <button class="place-order-btn" id="continueShoppingBtn">Continue Shopping</button>
+        </div>
+      </div>
+
+      <!-- Offers -->
+      <section class="offers">
+        <div class="offer" tabindex="0" aria-label="Free Shipping Offer">
+          <h3>Free Shipping</h3>
+          <p>On orders above 999/-</p>
+        </div>
+        <div class="offer" tabindex="0" aria-label="30 Days Return Offer">
+          <h3>10 Days Return</h3>
+          <p>Hassle-free returns on all products</p>
+        </div>
+        <div class="offer" tabindex="0" aria-label="24/7 Support Offer">
+          <h3>24/7 Support</h3>
+          <p>We are here to help anytime</p>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer><p>&copy; 2025 MegaMart. All rights reserved.</p></footer>
+    </main>
+
+    <script>
+      window.productData = [
+        {
+          title: "Samsung Galaxy S21",
+          price: 32999,
+          desc: "The Samsung Galaxy S21 is a high-end smartphone with a 6.2-inch Dynamic AMOLED 2X display and a versatile triple-camera system. It launched in 2021 as a flagship device, known for its smooth performance and sleek design",
+          img: "https://as2.ftcdn.net/jpg/05/42/54/19/1024W_F_542541982_U5EIeldjhtQCix9h4vflS6sxb36FJlm8_NW1.jpg",
+          rating: 5,
+          reviews: [
+            { user: "Alex", rating: 5, comment: "Amazing camera and battery life!" },
+            { user: "Jordan", rating: 5, comment: "Sleek design and fast performance." },
+            { user: "Taylor", rating: 4, comment: "Great phone, but a bit pricey." }
+          ]
+        },
+        {
+          title: "Hanes Beefy-T V-Neck",
+          price: 499,
+          desc: "A classic for a reason, the Hanes Beefy-T is a reliable, durable option. This T-shirt is made with heavier cotton, which gives it a more structured feel and helps it last a long time. It's a no-frills, practical choice that's widely available",
+          img: "https://images.unsplash.com/photo-1693443688057-85f57b872a3c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          rating: 4,
+          reviews: [
+            { user: "Sam", rating: 4, comment: "Comfortable and durable fabric." },
+            { user: "Chris", rating: 4, comment: "Good fit, washes well." },
+            { user: "Pat", rating: 3, comment: "Okay, but shrinks a bit." }
+          ]
+        },
+        {
+          title: "Eames Chair",
+          price: 8999,
+          desc: "The chair typically features a solid wood frame, often made from Sheesham, mango, or teak, which provides its distinctive brown color and sturdy build. The seat and/or backrest are padded and upholstered in a grey fabric, such as linen or cotton, offering both comfort and a stylish color contrast.",
+          img: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          rating: 3,
+          reviews: [
+            { user: "Riley", rating: 3, comment: "Comfortable but a bit pricey." },
+            { user: "Morgan", rating: 4, comment: "Stylish and sturdy." },
+            { user: "Casey", rating: 2, comment: "Not as comfortable as expected." }
+          ]
+        },
+        {
+          title: "Fossil Neutra Watch",
+          price: 12999,
+          desc: "A classic watch that combines a rich brown leather strap with a polished silver-tone stainless steel case. The watch face often features multiple subdials for chronograph functionality, and the overall design is inspired by vintage aesthetics, making it both stylish and practical.",
+          img: "https://images.unsplash.com/photo-1612817159450-08a180df028b?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          rating: 4,
+          reviews: [
+            { user: "Drew", rating: 4, comment: "Stylish and functional." },
+            { user: "Jamie", rating: 5, comment: "Love the vintage look." },
+            { user: "Avery", rating: 3, comment: "Good, but strap is stiff." }
+          ]
+        }
+      ];
+    </script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      lucide.createIcons();
+      const homeSwiper = new Swiper(".home-slider", {
+        loop: true,
+        autoplay: { delay: 2500, disableOnInteraction: false },
+        pagination: { el: ".swiper-pagination", clickable: true },
+        grabCursor: true,
+      });
+
+      const categorySwiper = new Swiper(".category-slider", {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        freeMode: true,
+        grabCursor: true,
+        breakpoints: {
+          320: { slidesPerView: 2.2, spaceBetween: 15 },
+          480: { slidesPerView: 3.5, spaceBetween: 20 },
+          768: { slidesPerView: 5, spaceBetween: 20 },
+        },
+      });
+    </script>
+  </body>
+</html>
